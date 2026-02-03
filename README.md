@@ -103,7 +103,67 @@ A virtual firewall that controls inbound and outbound traffic for EC2 instances.
 ### Terraform Overview
 Terraform is an **Infrastructure as Code (IaC)** tool used to define and provision cloud resources using configuration files.
 
-# Code of terraform is located at Terraform_ec2 folder inside repository.
+# Node:- Code of terraform is located at Terraform_ec2 folder inside repository.
+
+## Step 1: Terraform Code Structure
+
+The Terraform configuration is organized into multiple files to ensure
+clarity, reusability, and secure handling of sensitive data.
+
+```text
+terraform-ec2/
+├── main.tf
+├── provider.tf
+├── variables.tf
+├── terraform.tfvars
+└── README.md
+```
+## Step 2: Executed command 
+Move to Terraform Directory
+```bash
+cd Terraform_ec2
+```
+
+Initialize Terraform
+```bash
+terraform init
+```
+
+Validate Configuration
+```bash
+terraform validate
+```
+
+Plan Infrastructure
+```bash
+terraform plan
+
+```
+
+Plan Infrastructure
+```bash
+terraform apply
+```
+
+Type "yes" when prompted.
+
+
+## Step 3: Verify EC2 Instance
+
+Open AWS EC2 Dashboard
+
+Confirm instance with name "Task 2 of pearlthoughts"
+
+Instance state should be Running
+
+## Step 9: Cleanup Resources
+
+To avoid unnecessary AWS charges, destroy the infrastructure when no longer required.
+
+```bash
+terraform destroy
+```
+
 ---
 
 ### My full Terraform course code written by myself : https://github.com/LavKushwaha01/Terraform
