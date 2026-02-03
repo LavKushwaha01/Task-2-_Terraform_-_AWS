@@ -3,8 +3,6 @@ data "aws_security_group" "default" {
   name = "default"
 }
 
-
-
 resource "aws_instance" "first-ec2-from-terraform" {
   ami                    = "ami-0c02fb55956c7d316"
   key_name               = var.key_name
