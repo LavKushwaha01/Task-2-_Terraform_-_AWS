@@ -18,4 +18,7 @@ terraform-ec2/
 ├── variables.tf
 ├── terraform.tfvars
 └── README.md
+```
 
+## Note :- 
+ all the content and documentation of this task is already provide in Readme file of this repository. this is only tells in brief about terraform file structure, region and instance types.
